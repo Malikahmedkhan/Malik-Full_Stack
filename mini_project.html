@@ -34,8 +34,12 @@
         /* flex: 0 0 100px; */
       }
       .sidebar {
+        display: flex;
         flex: 0 0 100px;
         background-color: aquamarine;
+        flex-direction: column;
+        height: 200px;
+        gap: 100px;
       }
       .main {
         flex: 1;
@@ -52,7 +56,10 @@
     </header>
 
     <div class="block2">
-      <aside class="sidebar">Sidebar</aside>
+      <aside class="sidebar">
+        <div class="stform">Student Form</div>
+        <div class="streport">Student Report</div>
+      </aside>
 
       <main class="block3">
         <section class="content">Content</section>
